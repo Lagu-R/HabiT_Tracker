@@ -9,7 +9,7 @@ def create_app():
     app = Flask(__name__)
 
     # Retrieve the database name from an environment variable
-    database_name = os.environ.get("habit-tracker-app")
+    database_name = os.environ.get("db_name")
 
     # Replace "your_database_name" with the actual name of your MongoDB database
     client = MongoClient(f"mongodb+srv://datlagu:<pw>@microblog-app.cdegwje.mongodb.net/{'db_name'}?retryWrites=true&w=majority")
